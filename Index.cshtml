@@ -1,0 +1,20 @@
+Open:
+Views → Student → Index.cshtml
+Add:
+@model List<string>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student List</title>
+</head>
+<body>
+<h2>Student List</h2>
+<ul>
+@foreach (var student in Model)
+{
+
+<li>@student</li>
+}
+</ul>
+</body>
+</html>
